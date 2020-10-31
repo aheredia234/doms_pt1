@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<p>Hello World!</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+<p id="demo"></p>
+
+<div id = "dip" class="myDiv">
+    <h2>This is a heading in a div element</h2>
+    <p>This is some text in a div element.</p>
+</div>
+
+<a id = "plop" href="https://mccfederation.mchenry.edu/adfs/ls?wa=wsignin1.0&wtrealm=urn%3amymcc.mchenry.edu%3a443&wctx=https%3a%2f%2fmymcc.mchenry.edu%2f_layouts%2f15%2fAuthenticate.aspx%3fSource%3d%252F&wreply=https%3a%2f%2fmymcc.mchenry.edu%2f_trust%2fDefault.aspx">Canvas Login</a>
+<script>
+var x = document.getElementsByTagName("p");
+var y = document.getElementsByTagName("div");
+var z = document.getElementsByTagName("a");
+document.getElementById("demo").innerHTML = 
+'The text in first paragraph (index 0) is: ' + x[0].innerHTML;
+document.getElementById("dip").innerHTML = 'The text in the div is: ' + y[0].innerHTML;
+document.getElementById("plop").innerHTML = 'The text in the <a> tag is: ' + z[0].innerHTML;
+
+</script>
+
+</body>
+</html>

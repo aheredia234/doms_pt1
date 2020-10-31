@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Query Selector</h2>
+
+<p>Hello World!</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+<p class="addedDOM"> Hi how are ya </p>
+
+<div class = "DOM2"> dip</div>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var x = document.querySelectorAll("p.intro");
+var y = document.querySelectorAll("p.addedDOM");
+var z = document.querySelectorAll("div.DOM2");
+
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+
+document.getElementById("demo1").innerHTML = 
+'The first paragraph (index 0) with class="added DOM": ' + y[0].innerHTML;
+
+document.getElementById("demo2").innerHTML = 
+'The first paragraph (index 0) in the div: ' + z[0].innerHTML;
+</script>
+
+</body>
+</html>

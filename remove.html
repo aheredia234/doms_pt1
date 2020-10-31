@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+
+<button onclick="myFunction()">Click Twice</button>
+
+<script>
+function myFunction() {
+  var elmnt = document.getElementsByTagName("p");
+  elmnt[0].remove();
+
+}
+</script>
+
+</body>
+</html>
